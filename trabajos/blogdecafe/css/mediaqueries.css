@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+    .header__texto{
+       margin-top: 15rem;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;         
+    }
+    .navegacion{
+        display: flex; 
+        gap: 2rem; 
+    }
+    .contenido-principal{
+        display: grid; 
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    .boton{
+        display: inline-block;
+    }
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .curso{
+        display: grid; 
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    h2{ font-size: 3.0rem; }
+    h3{ font-size: 2.8rem; }
+    h4{ font-size: 2.2rem; }
+    p{ font-size: 1.6rem; }
+    .formulario{
+        padding: 3rem;
+        width: 90%;
+    }
+    .campo{
+        flex-wrap: wrap;
+    }
+    .campo__label{
+        text-align: left;
+        flex: 0 0 100%;
+    } 
+    .campo__field{
+        width: 100%;
+    }
+    .campo__field--textarea{
+        max-width: 100%; 
+        min-width: 100%;
+        /* height: 200rem;  */
+    }
+}
+
+@media (max-width: 360px) {
+    .header__texto{
+        margin: 3rem; 
+    }
+    h1{ font-size: 4.0rem; } 
+    h2{ font-size: 2.0rem; }
+    p{ font-size: 1.6rem; }
+
+    .formulario{
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
