@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <h1>Porfolio que flipas!! </h1>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio Javier Gómez Pombo"> 
+
+        <!-- Preload -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
+        300;0,400;0,600;0,700;1,600&family=Roboto+Slab:wght@100;400;800;900&display=swap" crossorigin="crossorigin" as="font"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
+        300;0,400;0,600;0,700;1,600&family=Roboto+Slab:wght@100;400;800;
+        900&display=swap" rel="stylesheet">
+        
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="preload" href="css/styles.css" as="style">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="preload" href="css/mediaqueries.css" as="style">
+        <link rel="stylesheet" href="css/mediaqueries.css">
+        <title>Portafolio</title>
+
+    </head>
+    <body>
+        <header>
+           <div class="contenedor">
+               <nav class="menu">
+                   <a href="#">Acerca de</a>
+                   <a href="#">Trabajos</a>
+                   <a href="#">Contacto</a>
+               </nav>
+               <div class="contenedor-texto">
+                   <div class="texto">
+                       <h1 class="nombre">Javier Gómez</h1>
+                       <h2 class="profesion">Desarrollador web</h2>
+                   </div>
+               </div>
+           </div> 
+        </header>
+
+        <section class="main">
+            <section class="acerca-de">
+                <div class="contenedor">
+                    <div class="foto">
+                        <picture>
+                            <source loading="lazy" srcset="img/foto.webp" type="image/webp">
+                            <img loading="lazy" src="img/foto.png" width="115px" height="115px" alt="Javier Gómez">
+                        </picture>
+                    </div>
+                    <div class="texto">
+                        <h3 class="titulo">Acerca de</h3>
+                        <p>Me gusta la combinación de las nuevas tecnologías con un buen diseño. 
+                        Estoy al tanto de las novedades relacionadas con la informática, siendo una
+                        persona con iniciativa propia y autodidacta.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="acerca-de">
+                <div class="contenedor">
+                    <div class="texto">
+                        <h3 class="titulo">Habilidades</h3>
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>Photoshop</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="trabajos">
+                <div class="contenedor">
+                    <h3 class="titulo">Trabajos</h3>
+                    <div class="contenedor-trabajos">
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <a href="trabajos/blogdecafe/index.html">
+                                    <picture>
+                                        <source loading="lazy" srcset="img/thumb/04-blogdecafe.webp" type="image/webp">
+                                        <img loading="lazy" src="img/thumb/04-blogdecafe.png" alt="Blog de café">
+                                    </picture>
+                                    
+                                </a>
+                            </div>                        
+                            <div class="descripcion">
+                                <p class="nombre">Blog de café</p>
+                                <p class="categoria">HTML - CSS - BEM</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <a href="trabajos/muyLinux/index.html">
+                                    <picture>
+                                        <source loading="lazy" srcset="img/thumb/01-muylinux.webp" type="image/webp">
+                                        <img loading="lazy" src="img/thumb/01-muylinux.png" alt="Muy Linux">
+                                    </picture>
+                                </a>
+                            </div>                        
+                            <div class="descripcion">
+                                <p class="nombre">Muy Linux</p>
+                                <p class="categoria">HTML - CSS - SASS</p>
+                            </div>
+                        </div>
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <a href="trabajos/tienda_basica/index.html">
+                                    <picture>
+                                        <source loading="lazy" srcset="img/thumb/03-tienda_basica.webp" type="image/webp">
+                                        <img loading="lazy" src="img/thumb/03-tienda_basica.png" alt="Tienda Básica">
+                                    </picture> 
+                                </a>
+                            </div>                        
+                            <div class="descripcion">
+                                <p class="nombre">Tienda básica</p>
+                                <p class="categoria">HTML - CSS - BEM</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <a href="trabajos/portfolio_basico/index.html">
+                                    <picture>
+                                        <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                        <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
+                                    </picture>
+                                </a>
+                            </div>                        
+                            <div class="descripcion">
+                                <p class="nombre">Portfolio básico</p>
+                                <p class="categoria">HTML - CSS</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>´
+
+        <footer>
+            <section class="contacto">
+                <div class="contenedor">
+                    <h3 class="titulo">Contacto</h3>
+                    <div class="iconos">
+
+                        <div class="info">
+                            <img loading="lazy" src="img/contacto/telefono.png" alt="Teléfono">
+                            <a href="tel:+34653098000">Teléfono</a>
+                        </div>
+
+                        <div class="info">
+                            <img loading="lazy" src="img/contacto/mail.png" alt="Mail">
+                            <a href="mailto:info@jgpombo.com">Mail</a>
+                        </div>
+
+                        <div class="info">
+                            <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
+                            <a href="http://linkedin.com/in/javiergomezpombo">Linkedin</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <script src="js/modernizr.js"></script>
+        </footer> 
+    </body>
 </html>
