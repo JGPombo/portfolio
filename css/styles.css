@@ -13,7 +13,7 @@ body{
     max-width: 1000px;
     /* background: cadetblue; */
     margin: auto;
-    overflow: hidden;
+   /* overflow: hidden; */
 }
 
 /* --------------- HEADER -------------------  */
@@ -35,15 +35,21 @@ header{
     */
 }
 
-header .menu{
-    margin: 40px 0;
-    text-align: right;
+.menu{
+    position: sticky;
+    top: 0;
+    background-color: #d82d2d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
 }
 
-header .menu a{
+.menu a{
     margin: 0 20px;
     color: #fff;
-    padding-bottom: 9px;
+    padding-bottom: 90px;
     display: inline-block;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -90,6 +96,11 @@ header .contenedor-texto .texto .profesion{
 
 /* ----------------- MAIN ---------------------  */
 
+.contenedor-pagina{
+    background-color: antiquewhite;
+    width: 80%;
+    margin:auto;
+}
 .main .contenedor{
     overflow: visible;
 }

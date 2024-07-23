@@ -26,14 +26,16 @@
 
     </head>
     <body>
+        <!--Pendiente de poner el menú en un div, pero hay que ver si funciona el sticky-->
+        <nav class="menu">
+            <a href="#">Acerca de</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+       </nav>
         <header>
            <div class="contenedor">
-               <nav class="menu">
-                   <a href="#">Acerca de</a>
-                   <a href="#">Habilidades</a>
-                   <a href="#">Proyectos</a>
-                   <a href="#">Contacto</a>
-               </nav>
+
                <div class="contenedor-texto">
                    <div class="texto">
                        <h1 class="nombre">Javier Gómez Pombo</h1>
@@ -42,141 +44,141 @@
                </div>
            </div> 
         </header>
-
-        <section class="main">
-            <section class="acerca-de">
-                <div class="contenedor">
-                    <div class="texto">
-                        <h3 class="titulo">Acerca de mi</h3>
-                    </div>    
-                    <div class="foto-descripcion">
-                        <div class="foto">
-                            <source loading="lazy" srcset="img/foto.webp" type="image/webp">
-                            <img loading="lazy" src="img/foto.png" width="200px" height="200px" alt="Javier Gómez">
-                        </div>
-                        <div class="descripcion">
-                            <p>
-                            Me gusta la combinación de las nuevas tecnologías con un buen diseño. 
-                            Estoy al tanto de las novedades relacionadas con la informática, siendo una
-                            persona con iniciativa propia y autodidacta.
-                            </p>
+        <div class="contenedor-pagina">
+            <section class="main">
+                <section class="acerca-de">
+                    <div class="contenedor">
+                        <div class="texto">
+                            <h3 class="titulo">Acerca de mi</h3>
+                        </div>    
+                        <div class="foto-descripcion">
+                            <div class="foto">
+                                <source loading="lazy" srcset="img/foto.webp" type="image/webp">
+                                <img loading="lazy" src="img/foto.png" width="200px" height="200px" alt="Javier Gómez">
+                            </div>
+                            <div class="descripcion">
+                                <p>
+                                Me gusta la combinación de las nuevas tecnologías con un buen diseño. 
+                                Estoy al tanto de las novedades relacionadas con la informática, siendo una
+                                persona con iniciativa propia y autodidacta.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="habilidades">
-                <div class="contenedor">
-                    <div class="texto">
-                        <h3 class="titulo">Habilidades</h3>
-                    </div>
-                    <div class="grupo-habilidades">
-                        <div class="front-back-tec">
-                            <div class="titulo-logo">
-                                <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
-                                <h5>Frontend</h5>
-                            </div>
-                            <div class="habilidades-descripcion">
-                                <p>HTML5 | CSS3 | Javascript</p>
-                                <p>Bootstrap | Figma</p>
+                <section class="habilidades">
+                    <div class="contenedor">
+                        <div class="texto">
+                            <h3 class="titulo">Habilidades</h3>
+                        </div>
+                        <div class="grupo-habilidades">
+                            <div class="front-back-tec">
+                                <div class="titulo-logo">
+                                    <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
+                                    <h5>Frontend</h5>
+                                </div>
+                                <div class="habilidades-descripcion">
+                                    <p>HTML5 | CSS3 | Javascript</p>
+                                    <p>Bootstrap | Figma</p>
 
+                                </div>
                             </div>
-                        </div>
-                        <div class="front-back-tec">
-                            <div class="titulo-logo">
-                                <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
-                                <h5>Backend</h5>
+                            <div class="front-back-tec">
+                                <div class="titulo-logo">
+                                    <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
+                                    <h5>Backend</h5>
+                                </div>
+                                <div class="habilidades-descripcion">
+                                    <p>Java | Spring | MySQL</p>
+                                </div>
                             </div>
-                            <div class="habilidades-descripcion">
-                                <p>Java | Spring | MySQL</p>
+                            <div class="front-back-tec">
+                                <div class="titulo-logo">
+                                    <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
+                                    <h5>Herramientas</h5>
+                                </div>
+                                <div class="habilidades-descripcion">
+                                    <p>GitHub | Postman | Scrum</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="front-back-tec">
-                            <div class="titulo-logo">
-                                <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
-                                <h5>Herramientas</h5>
-                            </div>
-                            <div class="habilidades-descripcion">
-                                <p>GitHub | Postman | Scrum</p>
-                            </div>
-                        </div>
-                    </div>      
+                        </div>      
 
-
-                </div>
-            </section>
-
-            <section class="proyectos">
-                <div class="contenedor">
-                    <div class="texto">
-                        <h3 class="titulo">Proyectos</h3>
-                    </div>
-                    <div class="contenedor-proyectos">
-                        <div class="proyecto">
-                            <div class="thumb">
-                                <a href="proyectos/blogdecafe/index.html">
-                                    <picture>
-                                        <source loading="lazy" srcset="img/thumb/04-blogdecafe.webp" type="image/webp">
-                                        <img loading="lazy" src="img/thumb/04-blogdecafe.png" alt="Blog de café">
-                                    </picture>
-                                    
-                                </a>
-                            </div>                        
-                            <div class="descripcion">
-                                <p class="nombre">Blog de café</p>
-                                <p class="categoria">HTML - CSS - BEM</p>
-                            </div>
-                        </div>
-
-                        <div class="proyecto">
-                            <div class="thumb">
-                                <a href="proyectos/muyLinux/index.html">
-                                    <picture>
-                                        <source loading="lazy" srcset="img/thumb/01-muylinux.webp" type="image/webp">
-                                        <img loading="lazy" src="img/thumb/01-muylinux.png" alt="Muy Linux">
-                                    </picture>
-                                </a>
-                            </div>                        
-                            <div class="descripcion">
-                                <p class="nombre">Muy Linux</p>
-                                <p class="categoria">HTML - CSS - SASS</p>
-                            </div>
-                        </div>
-                        <div class="proyecto">
-                            <div class="thumb">
-                                <a href="proyectos/tienda_basica/index.html">
-                                    <picture>
-                                        <source loading="lazy" srcset="img/thumb/03-tienda_basica.webp" type="image/webp">
-                                        <img loading="lazy" src="img/thumb/03-tienda_basica.png" alt="Tienda Básica">
-                                    </picture> 
-                                </a>
-                            </div>                        
-                            <div class="descripcion">
-                                <p class="nombre">Tienda básica</p>
-                                <p class="categoria">HTML - CSS - BEM</p>
-                            </div>
-                        </div>
-
-                        <div class="proyecto">
-                            <div class="thumb">
-                                <a href="proyectos/portfolio_basico/index.html">
-                                    <picture>
-                                        <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
-                                        <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
-                                    </picture>
-                                </a>
-                            </div>                        
-                            <div class="descripcion">
-                                <p class="nombre">Portfolio básico</p>
-                                <p class="categoria">HTML - CSS</p>
-                            </div>
-                        </div>
 
                     </div>
-                </div>
-            </section>
-        </section>´
+                </section>
 
+                <section class="proyectos">
+                    <div class="contenedor">
+                        <div class="texto">
+                            <h3 class="titulo">Proyectos</h3>
+                        </div>
+                        <div class="contenedor-proyectos">
+                            <div class="proyecto">
+                                <div class="thumb">
+                                    <a href="proyectos/blogdecafe/index.html">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/thumb/04-blogdecafe.webp" type="image/webp">
+                                            <img loading="lazy" src="img/thumb/04-blogdecafe.png" alt="Blog de café">
+                                        </picture>
+                                        
+                                    </a>
+                                </div>                        
+                                <div class="descripcion">
+                                    <p class="nombre">Blog de café</p>
+                                    <p class="categoria">HTML - CSS - BEM</p>
+                                </div>
+                            </div>
+
+                            <div class="proyecto">
+                                <div class="thumb">
+                                    <a href="proyectos/muyLinux/index.html">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/thumb/01-muylinux.webp" type="image/webp">
+                                            <img loading="lazy" src="img/thumb/01-muylinux.png" alt="Muy Linux">
+                                        </picture>
+                                    </a>
+                                </div>                        
+                                <div class="descripcion">
+                                    <p class="nombre">Muy Linux</p>
+                                    <p class="categoria">HTML - CSS - SASS</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <div class="thumb">
+                                    <a href="proyectos/tienda_basica/index.html">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/thumb/03-tienda_basica.webp" type="image/webp">
+                                            <img loading="lazy" src="img/thumb/03-tienda_basica.png" alt="Tienda Básica">
+                                        </picture> 
+                                    </a>
+                                </div>                        
+                                <div class="descripcion">
+                                    <p class="nombre">Tienda básica</p>
+                                    <p class="categoria">HTML - CSS - BEM</p>
+                                </div>
+                            </div>
+
+                            <div class="proyecto">
+                                <div class="thumb">
+                                    <a href="proyectos/portfolio_basico/index.html">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                            <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
+                                        </picture>
+                                    </a>
+                                </div>                        
+                                <div class="descripcion">
+                                    <p class="nombre">Portfolio básico</p>
+                                    <p class="categoria">HTML - CSS</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>´
+        </div>
         <footer>
             <section class="contacto">
                 <div class="contenedor">
