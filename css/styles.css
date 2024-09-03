@@ -37,30 +37,35 @@ header{
 
 .menu{
     position: sticky;
+    height: 80px;
     top: 0;
-    background-color: #d82d2d;
+    background-color: #423d3d;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px 20px;
+    /* text-align: center; */
     width: 100%;
     z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .menu a{
-    margin: 0 20px;
+    /* margin: 0 20px; */
     color: #fff;
-    padding-bottom: 90px;
-    display: inline-block;
+    padding: 10px;
+    /* display: inline-block; */
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    font-size: 1em;
+    font-size: 24px;
 }
 
 header .menu a:hover{
     border-bottom: 2px solid #fff;
 }
 
-header .contenedor-texto{
+header .container-text{
     display: flex;
     margin: 50px 0;
     justify-content: center;
@@ -68,7 +73,7 @@ header .contenedor-texto{
 
 }
 
-header .contenedor-texto .texto{
+header .container-text .texto{
     border: 2px solid rgba(255,255,255, .5);
     border-radius: 3px;
     display: inline-block;
@@ -76,20 +81,20 @@ header .contenedor-texto .texto{
     padding: 20px 60px;
 }
 
-header .contenedor-texto .texto h1,
-header .contenedor-texto .texto h2{
+header .container-text .texto h1,
+header .container-text .texto h2{
     color: #fff;
     font-weight: 300;
     margin: 0;
 }
 
-header .contenedor-texto .texto .nombre{
+header .container-text .text .nombre{
     margin-bottom: 10px;
     font-size: 50px;
     line-height: 50px;
 }
 
-header .contenedor-texto .texto .profesion{
+header .container-text .text .profesion{
     font-size: 25px;
     line-height: 25px;
 }
