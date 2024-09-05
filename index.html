@@ -24,21 +24,25 @@
         <link rel="stylesheet" href="css/mediaqueries.css">
         <title>JGPombo</title>
 
-    </head>3
+    </head>
     <body>
-        <div class="container">
+        <div class="main-container">
             <!--Pendiente de poner el menú en un div, pero hay que ver si funciona el sticky-->
             <nav class="menu">
-                <a href="#">Javier Gómez</a>
-                <a href="https://www.figma.com/proto/x6Pmbuy4kxkgjPtndfscEO/Untitled?t=DkXqXQEXyVYHBwlo-1">Sobre mi</a>
-                <a href="https://www.figma.com/proto/x6Pmbuy4kxkgjPtndfscEO/Untitled?node-id=2-1142&t=DkXqXQEXyVYHBwlo-1">Proyectos</a>
-                <a href="https://www.figma.com/design/x6Pmbuy4kxkgjPtndfscEO/Untitled?m=dev&t=DkXqXQEXyVYHBwlo-1">Contacto</a>
-                <a href="https://www.figma.com/proto/FWIQrc0sLR6GeY2a5PxWAj/Peliculas?node-id=0-1&t=DkXqXQEXyVYHBwlo-1">Android</a>
-                <a href="https://www.figma.com/proto/FWIQrc0sLR6GeY2a5PxWAj/Peliculas?node-id=1-1879&t=DkXqXQEXyVYHBwlo-1">Android2</a>
-
-                
+                <div class="logo">
+                    <img src="ico/cohete.png" alt="logo">
+                </div>
+                <div class="links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="language-theme">
+                    <img src="ico/language.png" alt="language">
+                    <img src="ico/light-dark.png" alt="theme">
+                </div>
             </nav>
-
+<!-- 
             <header>
                 <div class="container-text">
                     <div class="texto">
@@ -47,8 +51,8 @@
                     </div>
                 </div> 
             </header>
-
-            <div class="contenedor-pagina">
+ -->
+            <div id="inicio" class="page-container">
                 <section class="main">
                     <section class="acerca-de">
                         <div class="contenedor">
@@ -57,15 +61,13 @@
                             </div>    
                             <div class="foto-descripcion">
                                 <div class="foto">
-                                    <source loading="lazy" srcset="img/foto.webp" type="image/webp">
-                                    <img loading="lazy" src="img/foto.png" width="200px" height="200px" alt="Javier Gómez">
+                                    <source loading="lazy" srcset="img/foto2.png" type="image/png">
+                                    <img loading="lazy" src="img/foto2.png" width="200px" height="200px" alt="Javier Gómez">
                                 </div>
                                 <div class="descripcion">
-                                    <p>
-                                    Me gusta la combinación de las nuevas tecnologías con un buen diseño. 
-                                    Estoy al tanto de las novedades relacionadas con la informática, siendo una
-                                    persona con iniciativa propia y autodidacta.
-                                    </p>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, error. Nesciunt 
+                                        facilis, incidunt in velit quo reiciendis quaerat libero ex consectetur adipisicing
+                                        elit. Ipsam, error. Nesciunt facilis, incidunt in velit.</p>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +114,7 @@
                         </div>
                     </section>
 
-                    <section class="proyectos">
+                    <section id="proyectos" class="proyectos">
                         <div class="contenedor">
                             <div class="texto">
                                 <h3 class="titulo">Proyectos</h3>
@@ -148,6 +150,7 @@
                                         <p class="categoria">HTML - CSS - SASS</p>
                                     </div>
                                 </div>
+
                                 <div class="proyecto">
                                     <div class="thumb">
                                         <a href="proyectos/tienda_basica/index.html">
@@ -178,6 +181,66 @@
                                     </div>
                                 </div>
 
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Portfolio básico</p>
+                                        <p class="categoria">HTML - CSS</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Portfolio básico</p>
+                                        <p class="categoria">HTML - CSS</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Portfolio básico</p>
+                                        <p class="categoria">HTML - CSS</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Portfolio básico</p>
+                                        <p class="categoria">HTML - CSS</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </section>
@@ -188,8 +251,14 @@
                 </section>´
             </div>
 
+
+            <div class="model-viewer">
+                <model-viewer src="models/model.glb" alt="Un modelo 3D" auto-rotate camera-controls></model-viewer>
+            </div>
+
+
             <footer>
-                <section class="contacto">
+                <section id="contacto" class="contacto">
                     <div class="contenedor">
                         <h3 class="titulo">Contacto</h3>
                         <div class="iconos">
@@ -201,17 +270,17 @@
 
                             <div class="info">
                                 <img loading="lazy" src="img/contacto/mail.png" alt="Mail">
-                                <a href="mailto:info@jgpombo.com">Mail</a>
+                                <a href="mailto:info@jgpombo.com">LinkedIn</a>
                             </div>
 
                             <div class="info">
                                 <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
-                                <a href="http://linkedin.com/in/javiergomezpombo">Linkedin</a>
+                                <a href="http://linkedin.com/in/javiergomezpombo">GitHub</a>
                             </div>
 
                             <div class="info">
                                 <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
-                                <a href="https://github.com/JGPombo">GitHub</a>
+                                <a href="https://github.com/JGPombo">Mail</a>
                             </div>
 
                         </div>
@@ -221,5 +290,8 @@
             </footer> 
 
         </div>
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
     </body>
 </html>

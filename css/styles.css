@@ -2,13 +2,61 @@
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(211, 211, 211);
+body {
+    background: rgb(72, 51, 129);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.main-container {
+    background-color: red;
+    width: 80%; 
+
 }
 
-.contenedor{
+.menu{
+    position: sticky;
+    height: 80px;
+    top: 0;
+    background-color: #423d3d62;
+    color: white;
+    /* padding: 20px 20px; */
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu .logo {
+    width: 10%;
+}
+
+.menu .logo img {
+    width: 48px;
+
+    background-color: #dd820d;
+}
+
+.menu .language-theme {
+    width: 10%;
+    text-align: right; 
+}
+
+.menu .language-theme img {
+    width: 24px;
+    margin: 4px;
+    background-color: aqua;
+}
+
+
+#inicio {
+    scroll-margin-top: 80px; /* Esto hace que al pinchar en el enlace de Inicio se ponga en la posición adecuada */
+}
+
+
+
+.contenedor {
     width: 90%;
     max-width: 1000px;
     /* background: cadetblue; */
@@ -16,6 +64,10 @@ body{
    /* overflow: hidden; */
 }
 
+.model-view {
+    text-align: center;
+    height: 200px;
+}
 /* --------------- HEADER -------------------  */
 
 /* .webp header{
@@ -35,21 +87,8 @@ header{
     */
 }
 
-.menu{
-    position: sticky;
-    height: 80px;
-    top: 0;
-    background-color: #423d3d;
-    color: white;
-    padding: 20px 20px;
-    /* text-align: center; */
-    width: 100%;
-    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
-    display: flex;
-    flex-direction: column;
 
 
-}
 
 .menu a{
     /* margin: 0 20px; */
@@ -101,7 +140,7 @@ header .container-text .text .profesion{
 
 /* ----------------- MAIN ---------------------  */
 
-.contenedor-pagina{
+.page-container {
     background-color: antiquewhite;
     width: 80%;
     margin:auto;
@@ -269,9 +308,13 @@ header .container-text .text .profesion{
 }
 
 /* ----------------- FOOTER ---------------------  */
+footer {
+    background-color: pink;
+}
 
 footer .contacto{
     padding: 60px 0;
+    margin-bottom: 400px;
 }
 
 footer .contacto .contenedor{
