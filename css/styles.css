@@ -9,6 +9,13 @@ body {
     display: flex;
     justify-content: center;
 }
+
+/* Estilos para el tema oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
 .main-container {
     background-color: red;
     width: 80%; 
