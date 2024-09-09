@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio Javier Gómez Pombo"> 
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
         <!-- Preload -->
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
@@ -39,7 +43,7 @@
                 </div>
                 <div class="language-theme">
                     <img src="ico/language.png" alt="language">
-                    <img id="themeImage" src="ico/moon.png" alt="Cambiar tema">
+                    <img id="themeImage" src="ico/sun.png" alt="Cambiar tema">
                 </div>
             </nav>
 <!-- 
@@ -57,7 +61,7 @@
                     <section class="acerca-de">
                         <div class="contenedor">
                             <div class="texto">
-                                <h3 class="titulo">Acerca de mi</h3>
+                                <!-- <h3 class="titulo suse-title">Acerca de mi</h3> -->
                             </div>    
                             <div class="foto-descripcion">
                                 <div class="foto">
@@ -65,7 +69,7 @@
                                     <img loading="lazy" src="img/foto2.png" width="200px" height="200px" alt="Javier Gómez">
                                 </div>
                                 <div class="descripcion">
-                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, error. Nesciunt 
+                                    <p class="suse-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, error. Nesciunt 
                                         facilis, incidunt in velit quo reiciendis quaerat libero ex consectetur adipisicing
                                         elit. Ipsam, error. Nesciunt facilis, incidunt in velit.</p>
                                 </div>
@@ -76,9 +80,19 @@
                     <section class="habilidades">
                         <div class="contenedor">
                             <div class="texto">
-                                <h3 class="titulo">Habilidades</h3>
+                                <h3 class="suse-title">Habilidades</h3>
                             </div>
                             <div class="grupo-habilidades">
+                                <div class="front-back-tec">
+                                    <div class="titulo-logo">
+                                        <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
+                                        <h5>Diseño</h5>
+                                    </div>
+                                    <div class="habilidades-descripcion">
+                                        <p>Figma | Photoshop | Blender</p>
+                                        <p>Illustrator | InDesign</p>
+                                    </div>
+                                </div>
                                 <div class="front-back-tec">
                                     <div class="titulo-logo">
                                         <img loading="lazy" src="img/contacto/logo_linkedin.png" alt="LinkedIn">
@@ -86,8 +100,7 @@
                                     </div>
                                     <div class="habilidades-descripcion">
                                         <p>HTML5 | CSS3 | Javascript</p>
-                                        <p>Bootstrap | Figma</p>
-
+                                        <p>Bootstrap | JQuery</p>
                                     </div>
                                 </div>
                                 <div class="front-back-tec">
@@ -117,24 +130,88 @@
                     <section id="proyectos" class="proyectos">
                         <div class="contenedor">
                             <div class="texto">
-                                <h3 class="titulo">Proyectos</h3>
+                                <h3 class="suse-title">Proyectos</h3>
                             </div>
                             <div class="contenedor-proyectos">
+
                                 <div class="proyecto">
                                     <div class="thumb">
-                                        <a href="proyectos/blogdecafe/index.html">
+                                        <a href="proyectos/portfolio_basico/index.html">
                                             <picture>
-                                                <source loading="lazy" srcset="img/thumb/04-blogdecafe.webp" type="image/webp">
-                                                <img loading="lazy" src="img/thumb/04-blogdecafe.png" alt="Blog de café">
+                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
+                                                <a href="https://www.figma.com/proto/v69bTim58PBFG0Cs24Uufh/SciFi-Books?node-id=212-2751&node-type=CANVAS&t=zQej25qtpHLT1sQj-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A4&starting-point-node-id=212%3A2751" target="_blank">
+                                                    <img loading="lazy" src="img/thumb/scifiland.png" alt="Scifiland">
+                                                </a>
                                             </picture>
-                                            
                                         </a>
                                     </div>                        
                                     <div class="descripcion">
-                                        <p class="nombre">Blog de café</p>
-                                        <p class="categoria">HTML - CSS - BEM</p>
+                                        <p class="nombre">SciFiLand</p>
+                                        <p class="categoria">Figma</p>
                                     </div>
                                 </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">App rutas</p>
+                                        <p class="categoria">Figma</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">App Caravanas</p>
+                                        <p class="categoria">Figma</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">App alimentación</p>
+                                        <p class="categoria">Figma</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="proyectos/portfolio_basico/index.html">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Tienda de bicicletas</p>
+                                        <p class="categoria">HTML - CSS</p>
+                                    </div>
+                                </div>
+                                
 
                                 <div class="proyecto">
                                     <div class="thumb">
@@ -153,6 +230,22 @@
 
                                 <div class="proyecto">
                                     <div class="thumb">
+                                        <a href="proyectos/blogdecafe/index.html">
+                                            <picture>
+                                                <source loading="lazy" srcset="img/thumb/04-blogdecafe.webp" type="image/webp">
+                                                <img loading="lazy" src="img/thumb/04-blogdecafe.png" alt="Blog de café">
+                                            </picture>
+                                            
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Blog de café</p>
+                                        <p class="categoria">HTML - CSS - BEM</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
                                         <a href="proyectos/tienda_basica/index.html">
                                             <picture>
                                                 <source loading="lazy" srcset="img/thumb/03-tienda_basica.webp" type="image/webp">
@@ -166,101 +259,37 @@
                                     </div>
                                 </div>
 
-                                <div class="proyecto">
-                                    <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
-                                            <picture>
-                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
-                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
-                                            </picture>
-                                        </a>
-                                    </div>                        
-                                    <div class="descripcion">
-                                        <p class="nombre">Portfolio básico</p>
-                                        <p class="categoria">HTML - CSS</p>
-                                    </div>
-                                </div>
 
-                                <div class="proyecto">
-                                    <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
-                                            <picture>
-                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
-                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
-                                            </picture>
-                                        </a>
-                                    </div>                        
-                                    <div class="descripcion">
-                                        <p class="nombre">Portfolio básico</p>
-                                        <p class="categoria">HTML - CSS</p>
-                                    </div>
-                                </div>
 
-                                <div class="proyecto">
-                                    <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
-                                            <picture>
-                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
-                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
-                                            </picture>
-                                        </a>
-                                    </div>                        
-                                    <div class="descripcion">
-                                        <p class="nombre">Portfolio básico</p>
-                                        <p class="categoria">HTML - CSS</p>
-                                    </div>
-                                </div>
 
-                                <div class="proyecto">
-                                    <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
-                                            <picture>
-                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
-                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
-                                            </picture>
-                                        </a>
-                                    </div>                        
-                                    <div class="descripcion">
-                                        <p class="nombre">Portfolio básico</p>
-                                        <p class="categoria">HTML - CSS</p>
-                                    </div>
-                                </div>
-
-                                <div class="proyecto">
-                                    <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
-                                            <picture>
-                                                <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp">
-                                                <img loading="lazy" src="img/thumb/02-portfolio_basico.png" alt="Portfolio básico">
-                                            </picture>
-                                        </a>
-                                    </div>                        
-                                    <div class="descripcion">
-                                        <p class="nombre">Portfolio básico</p>
-                                        <p class="categoria">HTML - CSS</p>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>
                     </section>
-
+<!-- 
                     <section class="cv">
                         <h5>Descarga mi CV</h5>
                     </section>
-                </section>´
+                     -->
+                </section>
             </div>
 
-
+<!-- Prueba del cubo sin texturas ---------------------------------------------------------------------- -->
             <div class="model-viewer">
-                <model-viewer src="models/model.glb" alt="Un modelo 3D" auto-rotate camera-controls></model-viewer>
+                <model-viewer 
+                    src="models/model.glb" 
+                    alt="Un modelo 3D" 
+                    auto-rotate 
+                    camera-controls 
+                    camera-orbit="0deg 90deg auto">
+                </model-viewer>
             </div>
 
 
             <footer>
                 <section id="contacto" class="contacto">
                     <div class="contenedor">
-                        <h3 class="titulo">Contacto</h3>
+                        <h3 class="titulo suse-title">Contacto</h3>
                         <div class="iconos">
 
                             <div class="info">

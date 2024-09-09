@@ -1,24 +1,52 @@
-*{
+* {
     box-sizing: border-box;
 }
 
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 800 */
+
+.suse-title {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(25, 180, 121);
+  text-align: center;
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+.suse-paragraph {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(41, 61, 42);
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: rgb(72, 51, 129);
+    background: rgb(42, 58, 38);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     display: flex;
     justify-content: center;
+    color:white; 
 }
 
-/* Estilos para el tema oscuro */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
+/* Estilos para el tema claro */
+body.light-mode {
+    background-color: #aeb8ae;
+    color: black;
 }
 
 .main-container {
     background-color: red;
-    width: 80%; 
+    width: 75%; 
 
 }
 
@@ -108,7 +136,7 @@ header{
 }
 
 header .menu a:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #4beb7b;
 }
 
 header .container-text{
@@ -149,7 +177,7 @@ header .container-text .text .profesion{
 
 .page-container {
     background-color: antiquewhite;
-    width: 80%;
+
     margin:auto;
 }
 .main .contenedor{
