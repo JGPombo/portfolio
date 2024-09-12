@@ -9,6 +9,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
 
         <!-- Preload -->
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
@@ -42,12 +46,13 @@
                     <a href="#contacto">Contacto</a>
                 </div>
                 <div class="language-theme">
-                    <img src="ico/language.png" alt="language">
-                    <img id="themeImage" src="ico/sun.png" alt="Cambiar tema">
+                    <i class="fa-solid fa-globe"></i>
+                    <i id="themeIcon" class="fa-regular fa-sun"></i>
                 </div>
             </nav>
 
             <div id="inicio" class="page-container">
+
                 <section class="main">
                     <section class="acerca-de">
                         <div class="contenedor">
@@ -76,7 +81,7 @@
                             </div>
                         </div>
                     </section>
-
+<!-- HABILIDADES -->
                     <section class="habilidades">
                         <div class="contenedor">
                             <div class="texto">
@@ -85,7 +90,8 @@
                             <div class="grupo-habilidades">
                                 <div class="front-back-tec">
                                     <div class="titulo-logo">
-                                        <img loading="lazy" src="ico/design.png" alt="LinkedIn">
+                                        <!-- <img loading="lazy" src="ico/design.png" alt="LinkedIn"> -->
+                                        <i class="fa-solid fa-pen-ruler"></i>
                                         <h4>Diseño</h4>
                                     </div>
                                     <div class="habilidades-descripcion">
@@ -96,7 +102,8 @@
                                 </div>
                                 <div class="front-back-tec">
                                     <div class="titulo-logo">
-                                        <img loading="lazy" src="ico/frontend.png" alt="LinkedIn">
+                                        <!-- <img loading="lazy" src="ico/frontend.png" alt="LinkedIn"> -->
+                                        <i class="fa-solid fa-laptop-code"></i>
                                         <h4>Frontend</h4>
                                     </div>
                                     <div class="habilidades-descripcion">
@@ -107,7 +114,9 @@
                                 </div>
                                 <div class="front-back-tec">
                                     <div class="titulo-logo">
-                                        <img loading="lazy" src="ico/backend2.png" alt="LinkedIn">
+                                        <!-- <img loading="lazy" src="ico/backend2.png" alt="LinkedIn"> -->
+                                        <i class="fa-regular fa-file-code"></i>
+                                        <!-- <i class="fa-solid fa-code"></i> -->
                                         <h4>Backend</h4>
                                     </div>
                                     <div class="habilidades-descripcion">
@@ -117,7 +126,8 @@
                                 </div>
                                 <div class="front-back-tec">
                                     <div class="titulo-logo">
-                                        <img loading="lazy" src="ico/tools.png" alt="LinkedIn">
+                                        <!-- <img loading="lazy" src="ico/tools.png" alt="LinkedIn"> -->
+                                        <i class="fa-solid fa-screwdriver-wrench"></i>
                                         <h4>Herramientas</h4>
                                     </div>
                                     <div class="habilidades-descripcion">
@@ -128,14 +138,14 @@
                             </div>      
                         </div>
                     </section>
-
+<!-- PROYECTOS -->
                     <section id="proyectos" class="proyectos">
                         <div class="contenedor">
                             <div class="texto">
                                 <h3 class="suse-title">Proyectos</h3>
                             </div>
                             <div class="contenedor-proyectos">
-
+<!-- Figma -->
                                 <div class="proyecto">
                                     <div class="thumb">
                                         <a href="proyectos/portfolio_basico/index.html">
@@ -155,10 +165,10 @@
 
                                 <div class="proyecto">
                                     <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
+                                        <a href="#proyectos">
                                             <picture>
                                                 <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
-                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="En construcción">
                                             </picture>
                                         </a>
                                     </div>                        
@@ -170,10 +180,10 @@
 
                                 <div class="proyecto">
                                     <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
+                                        <a href="#proyectos">
                                             <picture>
                                                 <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
-                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="En construcción">
                                             </picture>
                                         </a>
                                     </div>                        
@@ -185,7 +195,7 @@
 
                                 <div class="proyecto">
                                     <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
+                                        <a href="#proyectos">
                                             <picture>
                                                 <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
                                                 <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
@@ -197,19 +207,18 @@
                                         <p class="categoria">Figma</p>
                                     </div>
                                 </div>
-
-
+<!-- Proyectos Front -->
                                 <div class="proyecto">
                                     <div class="thumb">
-                                        <a href="proyectos/portfolio_basico/index.html">
+                                        <a href="#proyectos">
                                             <picture>
                                                 <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
-                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="Portfolio básico">
+                                                <img loading="lazy" src="img/thumb/en_construccion.png" alt="En construcción">
                                             </picture>
                                         </a>
                                     </div>                        
                                     <div class="descripcion">
-                                        <p class="nombre">Tienda de bicicletas</p>
+                                        <p class="nombre">JBikes</p>
                                         <p class="categoria">HTML - CSS</p>
                                     </div>
                                 </div>
@@ -260,8 +269,68 @@
                                         <p class="categoria">HTML - CSS - BEM</p>
                                     </div>
                                 </div>
+<!-- Proyectos Android -->
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="#proyectos">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/02-portfolio_basico.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/scifiland.png" alt="Scifiland">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">SciFiLand</p>
+                                        <p class="categoria">Kotlin - Firebase</p>
+                                    </div>
+                                </div>
 
 
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="#proyectos">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/01-muylinux.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/mccsa.png" alt="Muy Linux">
+                                            </picture>
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Rutas Deporte</p>
+                                        <p class="categoria">Kotlin - Firebase</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="#proyectos">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/04-blogdecafe.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/04-blogdecafe.png" alt="Blog de café">
+                                            </picture>
+                                            
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">JGPelículas</p>
+                                        <p class="categoria">Kotlin - SQLite</p>
+                                    </div>
+                                </div>
+
+                                <div class="proyecto">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <picture>
+                                                <!-- <source loading="lazy" srcset="img/thumb/03-tienda_basica.webp" type="image/webp"> -->
+                                                <img loading="lazy" src="img/thumb/tresenraya.png" alt="Tienda Básica">
+                                            </picture> 
+                                        </a>
+                                    </div>                        
+                                    <div class="descripcion">
+                                        <p class="nombre">Tres en raya</p>
+                                        <p class="categoria">Kotlin - SQLite</p>
+                                    </div>
+                                </div>
 
 
 
@@ -277,7 +346,7 @@
             </div>
 
 <!-- Prueba del cubo sin texturas ---------------------------------------------------------------------- -->
-            <div class="model-viewer">
+            <!-- <div class="model-viewer">
                 <model-viewer 
                     src="models/model.glb" 
                     alt="Un modelo 3D" 
@@ -285,7 +354,7 @@
                     camera-controls 
                     camera-orbit="0deg 90deg auto">
                 </model-viewer>
-            </div>
+            </div> -->
 
 
             <footer>
@@ -296,25 +365,25 @@
 
                             <div class="info">
                                 <a href="tel:+34653098000">
-                                    <img loading="lazy" src="ico/phone.png" alt="Teléfono">
+                                    <i class="fa-solid fa-phone"></i> 
                                 </a>
                             </div>
 
                             <div class="info">
                                 <a href="http://linkedin.com/in/javiergomezpombo">
-                                    <img loading="lazy" src="ico/linkedin.png" alt="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
                                 </a>
                             </div>
 
                             <div class="info">
                                 <a href="https://github.com/JGPombo">
-                                    <img loading="lazy" src="ico/github.png" alt="GitHub">
+                                    <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
 
                             <div class="info">
                                 <a href="mailto:info@jgpombo.com">
-                                    <img loading="lazy" src="ico/mail.png" alt="Mail">
+                                    <i class="fa-solid fa-envelope"></i>
                                 </a>
                             </div>
 

@@ -1,7 +1,6 @@
 // Estos son los scripts de mi archivo de JavaScript
-console.log("hola"); 
 // Selecciona el botón
-const themeToggleButton = document.getElementById('themeImage');
+const themeToggleButton = document.getElementById('themeIcon');
 
 // Agrega un evento de clic al botón
 themeToggleButton.addEventListener('click', function () {
@@ -10,8 +9,10 @@ themeToggleButton.addEventListener('click', function () {
     
     // Cambia el texto del botón
     if (document.body.classList.contains('light-mode')) {
-        themeImage.src = 'ico/moon.png';
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
     } else {
-        themeImage.src = 'ico/sun.png';
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
     }
 });

@@ -118,10 +118,15 @@ body.light-mode {
     text-align: right; 
 }
 
-.menu .language-theme img {
-    width: 24px;
+.menu .language-theme i {
+    /* width: 28px;
     margin: 4px;
-    background-color: aqua;
+    color:#00d3b8;  */
+    /* background-color: aqua; */
+    font-size: 24px;
+    margin-left: 10px;
+    width: 28px;
+    cursor: pointer; 
 }
 
 #inicio {
@@ -277,11 +282,12 @@ header .container-text .text .profesion{
 }
 
 .main .habilidades .contenedor .grupo-habilidades .front-back-tec {
-    background-color: var(--secondary-color);
+    background-color: var(--terciary-color);
     align-items: center;
     width: 50%;
     padding: 10px;
     margin: 10px;
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
     /* border-radius: 50%; */
 }
@@ -292,6 +298,13 @@ header .container-text .text .profesion{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--grey-color);
+}
+
+.main .habilidades .contenedor .grupo-habilidades .front-back-tec .titulo-logo i {
+    font-size: 20px;
+    padding: 8px;
+
 }
 
 .main .habilidades .contenedor .front-back-tec img {
@@ -381,14 +394,14 @@ header .container-text .text .profesion{
 
 .main .proyectos .contenedor-proyectos .proyecto .descripcion .nombre {
     font-weight: 700;
-    /* color: #3895ea; */
+    color: var(--grey-color);
     margin-bottom: 10px;
     text-align: center;
 }
 
 .main .proyectos .contenedor-proyectos .proyecto .descripcion .categoria {
     font-size: 14px;
-    color: #636363;
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -445,12 +458,13 @@ footer .contacto .contenedor .iconos .info a {
     color: #fff;
 }
 
-footer .contacto .contenedor .info a img {
+footer .contacto .contenedor .info a i {
     /* background-color: #f00; */
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     /* margin-right: 10px; */
-
+    /* color: red; */
+    font-size: 32px;
 }
 
 
